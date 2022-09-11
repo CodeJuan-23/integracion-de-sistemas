@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+	
+	var data =
+	{
+		codigo:"001",
+
+		nombre:"Luis"
+	}
+ 	
+ 	string_data=JSON.stringify(data)
+	
+	//console.log(data);
+
+	//console.log(string_data);
+
+	var array_data=[
+
+		{
+		codigo:"001",
+
+		nombre:"Luis"
+		},
+
+		{
+		codigo:"002",
+
+		nombre:"Alberto"
+		},
+	];
+
+	//console.log(array_data);
+
+
+		document.write(`<table>
+		<thead>
+			<tr><th>codigo</th><th>nombre</th></tr>
+		</thead>
+		<body>
+		`);
+
+	 	for(i=0;i<array_data.length;i++)
+	 	{
+	 		document.write("<tr><td>"+array_data[i].codigo+"</td><td>"+array_data[i].nombre+"</td></tr>");	
+	 	}
+				
+		document.write(`<body>
+			</table>
+
+			`);
+
+
+</script>
+
+<!--
+<table>
+	
+	<thead>
+		<tr><th>codigo</th><th>nombre</th></tr>	
+		
+	</thead>
+	<tbody>
+		<tr><th>001</th><th>Luis</th></tr>
+		<tr><th>002</th><th>Alberto</th></tr>
+	</tbody>
+
+
+</table>
+-->
+
+</body>
+</html>
